@@ -1,8 +1,5 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-
-from models import Base, Restaurant, User, Review
-from auth import register, login_user
 from security import hash_password, verify_password
 
 app = FastAPI()
